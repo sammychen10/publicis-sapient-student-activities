@@ -1,0 +1,78 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE Edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h2>Simple Form</h2>
+    <form name="login" method="post" action="#" onsubmit="return handleSub()">
+        <label>
+            First Name <input type="text" name=n1 placeholder="Enter First Name" />
+        </label>
+        <br />
+        <label>
+            Last Name <input type="text" name=n2 placeholder="Enter Last Name" />
+        </label>
+        <br />
+        <label>
+            Password <input type="password" name=n3 placeholder="Enter Password" />
+        </label>
+        <br />
+        <label>
+            Confirm Password <input type="password" name=n4 placeholder="Confirm" />
+        </label>
+        <br />
+        <label>
+            Select gender below
+        </label>
+        <br />
+        <input type="radio" id="gender2" name="female" value="female">
+        <label for="gender1"> Female</label>
+        <input type="radio" id="gender1" name="male" value="male">
+        <label for="gender1"> Male</label>
+        <br />
+        <label>
+            Select Skills Below
+        </label>
+        <br />
+        <input type="checkbox" id="skill1">
+        <label for="skill1"> Java </label>
+        <input type="checkbox" id="skill2">
+        <label for="skill1"> C </label>
+        <input type="checkbox" id="skill3">
+        <label for="skill1"> C++ </label>
+        <br />
+
+
+        <br />
+        <input type="submit" value="register" />
+
+        <script type='text/javascript'>
+            handleSub(){
+                let login = document.login;
+                let first = document.n1;
+                let last = document.n2;
+                let pw = document.n3;
+                let cpw = document.n4;
+                if (first.value.length < 3) {
+                    alert("first name too short!");
+                    return false;
+                }
+                if (last.value.length < 2) {
+                    alert("last name too short!");
+                    return false;
+                }
+                if (pw.value != cpw.value) {
+                    alert("passwords don't match!");
+                    return false;
+                }
+            }
+        </script>
+    </form>
+</body>
+
+</html>

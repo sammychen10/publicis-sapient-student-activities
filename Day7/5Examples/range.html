@@ -1,0 +1,22 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE Edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    Blue<input type="range" min="0" max="100" . oninput="handleEvent(event)">
+    <span id="s1"></span>
+    <script type=text/javascript>
+            function handleEvent(event){
+                let rangeBar = event.target.value;
+                document.getElementById('s1').innerHTML = rangeBar;
+            }
+        </script>
+</body>
+
+</html>

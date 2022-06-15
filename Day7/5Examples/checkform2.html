@@ -1,0 +1,43 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE Edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h2>Login</h2>
+    <form name="login" action="index.html" method="post" onsubmit="return handleSubmit()">
+        Username <input type="text" name="un" /> <br />
+        Password <input tvpe="password" name=pw /> <br />
+        Age <input tvpe="age" name=age /> <br />
+        <input type="submit" value="submit" />
+    </form>
+    <script type="text/javascript">
+        function handleSub() {
+            let login = document.login;
+            let user = login.un;
+            let pw = login.pw
+            let age = login.age
+            if (pw.length == 0) {
+                alert("Not enough characters!");
+                return false;
+            }
+            if (user.length == 0) {
+                alert("Not enough characters!");
+                return false;
+            }
+            if (age < 16) {
+                alert("Not old enough!");
+                return false;
+            }
+        }
+
+    </script>
+
+
+</body>
+
+</html>

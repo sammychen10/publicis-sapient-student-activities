@@ -1,0 +1,26 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE Edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h2> Chessboard </h2>
+    <canvas id="c1" style="border:2px solid black" width="800" height="800"></canvas>
+    <script type=text/javascript>
+            let shp = document.getElementById('c1').getContext('2d');
+            shp.fillStyle = 'black';
+            for(let i = 0; i < 8; i++){
+                for(let j = 0; j < 8; j++){
+                    if((i + j)% 2){
+                        shp.fillRect(100*j, 100*i, 100, 100);  
+                    }
+                }
+            }
+    </script>
+</body>
+
+</html>

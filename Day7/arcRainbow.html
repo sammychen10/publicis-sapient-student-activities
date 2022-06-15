@@ -1,0 +1,52 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE Edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <canvas id="c1" style="border:2px solid black" width="800" height="800"></canvas>
+    <script type=text/javascript>
+            let shp = document.getElementById('c1').getContext('2d');
+            shp.fillStyle = 'Red';
+            shp.beginPath();
+            shp.arc(100,50,50,0,Math.PI, true);
+            shp.fill();
+
+            shp.fillStyle = 'Orange';
+            shp.beginPath();
+            shp.arc(200,100,50,0,Math.PI, true);
+            shp.fill();
+
+            shp.fillStyle = 'Yellow';
+            shp.beginPath();
+            shp.arc(300,150,50,0,Math.PI, true);
+            shp.fill();
+
+            shp.fillStyle = 'Green';
+            shp.beginPath();
+            shp.arc(400,200,50,0,Math.PI, true);
+            shp.fill();
+
+            shp.fillStyle = 'Blue';
+            shp.beginPath();
+            shp.arc(500,250,50,0,Math.PI, true);
+            shp.fill();
+
+            shp.fillStyle = 'Indigo';
+            shp.beginPath();
+            shp.arc(600,300,50,0,Math.PI, true);
+            shp.fill();
+
+            shp.fillStyle = 'Violet';
+            shp.beginPath();
+            shp.arc(700,350,50,0,Math.PI, true);
+            shp.fill();
+            
+        </script>
+</body>
+
+</html>
